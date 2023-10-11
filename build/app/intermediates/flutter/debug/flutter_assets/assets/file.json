@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199456757527",
+    "project_id": "hacktoberfest-tracker",
+    "storage_bucket": "hacktoberfest-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199456757527:android:bc750add48de98f0cb4952",
+        "android_client_info": {
+          "package_name": "com.amfoss.hactoberfest_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbSOQ1FUL8jDqwLHuEAuF8JrvHX8uEBcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.amfoss.hactoberfest_tracker"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/interstellar/hactoberfest_tracker/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/home/interstellar/hactoberfest_tracker/android/app/src/debug/AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/home/interstellar/hactoberfest_tracker/android/app/src/main/AndroidManifest.xml:3:5-81
+16-->/home/interstellar/hactoberfest_tracker/android/app/src/main/AndroidManifest.xml:3:22-78
+17    <uses-permission android:name="android.permission.CAMERA" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17-->/home/interstellar/hactoberfest_tracker/android/app/src/main/AndroidManifest.xml:4:5-65
+17-->/home/interstellar/hactoberfest_tracker/android/app/src/main/AndroidManifest.xml:4:22-62
+18    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:10:5-79
+19-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:10:22-76
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:24:5-68
+20-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:24:22-65
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:5-79
+21-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:22-76
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:22-107
+23
+24    <application
+25        android:name="android.app.Application"
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.8.0] /home/interstellar/.gradle/caches/transforms-3/aa2aa77d3005e47f0c5984337b182cd1/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+29        android:label="Tracker" >
+30        <activity
+31            android:name="com.amfoss.hactoberfest_tracker.MainActivity"
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33            android:exported="true"
+34            android:hardwareAccelerated="true"
+35            android:launchMode="singleTop"
+36            android:theme="@style/LaunchTheme"
+37            android:windowSoftInputMode="adjustResize" >
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+46                android:name="io.flutter.embedding.android.NormalTheme"
+47                android:resource="@style/NormalTheme" />
+48
+49            <intent-filter>
+50                <action android:name="android.intent.action.MAIN" />
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+60            android:name="flutterEmbedding"
+61            android:value="2" />
+62
+63        <service
+63-->[:cloud_firestore] /home/interstellar/hactoberfest_tracker/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+64            android:name="com.google.firebase.components.ComponentDiscoveryService"
+64-->[:cloud_firestore] /home/interstellar/hactoberfest_tracker/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+65            android:directBootAware="true"
+65-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:34:13-43
+66            android:exported="false" >
+66-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:16:13-37
+67            <meta-data
+67-->[:cloud_firestore] /home/interstellar/hactoberfest_tracker/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+68-->[:cloud_firestore] /home/interstellar/hactoberfest_tracker/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[:cloud_firestore] /home/interstellar/hactoberfest_tracker/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+70            <meta-data
+70-->[:firebase_core] /home/interstellar/hactoberfest_tracker/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+71-->[:firebase_core] /home/interstellar/hactoberfest_tracker/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[:firebase_core] /home/interstellar/hactoberfest_tracker/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:17:13-19:85
+74                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+74-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:18:17-111
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-firestore:24.8.1] /home/interstellar/.gradle/caches/transforms-3/8a86a41f697bdd488e113ecbe1308c50/transformed/jetified-firebase-firestore-24.8.1/AndroidManifest.xml:19:17-82
+76            <meta-data
+76-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:31:13-33:85
+77                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+77-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:32:17-139
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.android.gms:play-services-measurement-api:21.3.0] /home/interstellar/.gradle/caches/transforms-3/60099f328aea6cb3912f84ec4344949e/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:33:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-installations:17.1.4] /home/interstellar/.gradle/caches/transforms-3/f10d65bc010ed7a521b7221626d28459/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:15:13-17:85
+80                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+80-->[com.google.firebase:firebase-installations:17.1.4] /home/interstellar/.gradle/caches/transforms-3/f10d65bc010ed7a521b7221626d28459/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:16:17-127
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-installations:17.1.4] /home/interstellar/.gradle/caches/transforms-3/f10d65bc010ed7a521b7221626d28459/transformed/jetified-firebase-installations-17.1.4/AndroidManifest.xml:17:17-82
+82        </service>
+83
+84        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
+84-->[:barcode_scan2] /home/interstellar/hactoberfest_tracker/build/barcode_scan2/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-84
+84-->[:barcode_scan2] /home/interstellar/hactoberfest_tracker/build/barcode_scan2/intermediates/merged_manifest/debug/AndroidManifest.xml:12:19-81
+85
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] /home/interstellar/.gradle/caches/transforms-3/08bb7c7bfcf0b6f35b61cc8ec8555f6e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:25:9-30:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:26:13-77
+95            android:authorities="com.amfoss.hactoberfest_tracker.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:27:13-72
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:28:13-43
+97            android:exported="false"
+97-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:29:13-37
+98            android:initOrder="100" />
+98-->[com.google.firebase:firebase-common:20.3.3] /home/interstellar/.gradle/caches/transforms-3/5ff3c8f01ef9211bf8f32a71e90b7b80/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:30:13-36
+99
+100        <receiver
+100-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:29:9-33:20
+101            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+101-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:30:13-85
+102            android:enabled="true"
+102-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:31:13-35
+103            android:exported="false" >
+103-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:32:13-37
+104        </receiver>
+105
+106        <service
+106-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:35:9-38:40
+107            android:name="com.google.android.gms.measurement.AppMeasurementService"
+107-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:36:13-84
+108            android:enabled="true"
+108-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:37:13-35
+109            android:exported="false" />
+109-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:38:13-37
+110        <service
+110-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:39:9-43:72
+111            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+111-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:40:13-87
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:41:13-35
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:42:13-37
+114            android:permission="android.permission.BIND_JOB_SERVICE" />
+114-->[com.google.android.gms:play-services-measurement:21.3.0] /home/interstellar/.gradle/caches/transforms-3/efcaa8bf60cd358e74bc251fb33c9184/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:43:13-69
+115
+116        <activity
+116-->[com.google.android.gms:play-services-base:18.0.1] /home/interstellar/.gradle/caches/transforms-3/10a592aef4c450bcf18938b1a3b63dc5/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+117            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+117-->[com.google.android.gms:play-services-base:18.0.1] /home/interstellar/.gradle/caches/transforms-3/10a592aef4c450bcf18938b1a3b63dc5/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+118            android:exported="false"
+118-->[com.google.android.gms:play-services-base:18.0.1] /home/interstellar/.gradle/caches/transforms-3/10a592aef4c450bcf18938b1a3b63dc5/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+119            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+119-->[com.google.android.gms:play-services-base:18.0.1] /home/interstellar/.gradle/caches/transforms-3/10a592aef4c450bcf18938b1a3b63dc5/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+120
+121        <meta-data
+121-->[com.google.android.gms:play-services-basement:18.1.0] /home/interstellar/.gradle/caches/transforms-3/a869b51872c17e5186ebf0ccca652867/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+122            android:name="com.google.android.gms.version"
+122-->[com.google.android.gms:play-services-basement:18.1.0] /home/interstellar/.gradle/caches/transforms-3/a869b51872c17e5186ebf0ccca652867/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+123            android:value="@integer/google_play_services_version" />
+123-->[com.google.android.gms:play-services-basement:18.1.0] /home/interstellar/.gradle/caches/transforms-3/a869b51872c17e5186ebf0ccca652867/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+124
+125        <provider
+125-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+126            android:name="androidx.startup.InitializationProvider"
+126-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+127            android:authorities="com.amfoss.hactoberfest_tracker.androidx-startup"
+127-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+128            android:exported="false" >
+128-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+129            <meta-data
+129-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+130-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+131                android:value="androidx.startup" />
+131-->[androidx.emoji2:emoji2:1.2.0] /home/interstellar/.gradle/caches/transforms-3/e90bb6d88b4545da030ca2e12c139cee/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/interstellar/.gradle/caches/transforms-3/7c29487785c3be871237435ccb16863f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/interstellar/.gradle/caches/transforms-3/7c29487785c3be871237435ccb16863f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/interstellar/.gradle/caches/transforms-3/7c29487785c3be871237435ccb16863f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+135        </provider>
+136    </application>
+137
+138</manifest>
